@@ -1,0 +1,14 @@
+
+.card{
+    height: 55%;
+    width: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgb(255, 246, 127); */
+    background-image: url(cardimg.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: .9;
+    border-radius: 15%;
+}
