@@ -1,15 +1,20 @@
-import Card from './component/Card';
-import heartbit from './heartbit.mp3';
-
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Request from './component/Request';
+import YesPage from './component/YesPage';
+import NoPage from './component/NoPage'; 
+import AgainNo from './component/AgainNo'
 import './App.css';
-function music(){
-  new Audio(heartbit).play()
-}
+
 function App() {
   return (
-    <div className="container">
-    <Card className=""></Card>
-    </div>
+    <Router>
+    <Routes>
+      <Route path="/" element={<Request />} />
+      <Route path="/yes" element={<YesPage />} />
+      <Route path="/no" element={<NoPage />} />
+      <Route path="/againno" element={<AgainNo />} />
+    </Routes>
+  </Router>
   );
 }
 
